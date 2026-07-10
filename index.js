@@ -38,7 +38,8 @@ client.on('messageCreate', (message) => {
   const command = args.shift().toLowerCase();
 
   if (command === 'ping') {
-    message.reply('Pong!');
+    console.log(`Ping command used by ${message.author.tag}`);
+message.reply('Pong!');
   }
 });
 
