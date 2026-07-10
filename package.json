@@ -1,0 +1,13 @@
+{
+  "name": "medways-card-machine",
+  "version": "1.0.0",
+  "description": "PS99 Card Game Discord Bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.21.0",
+    "dotenv": "^16.4.7"
+  }
+}
