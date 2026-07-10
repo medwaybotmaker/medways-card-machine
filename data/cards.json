@@ -1,0 +1,12 @@
+{
+  "Starter Egg": {
+    "cost": 0,
+    "cards": [
+      "Dog",
+      "Cat",
+      "Bunny",
+      "Bear",
+      "Pig"
+    ]
+  }
+}
