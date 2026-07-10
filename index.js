@@ -1,5 +1,21 @@
+require('dotenv').config();
+
+const express = require('express');
 const { Client, GatewayIntentBits } = require('discord.js');
 
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+// Tiny web server for Render
+app.get('/', (req, res) => {
+  res.send('Medway\'s Card Machine is online!');
+});
+
+app.listen(PORT, () => {
+  console.log(`Web server running on port ${PORT}`);
+});
+
+// Discord bot
 const client = new Client({
   intents: [
     GatewayIntentBits.Guilds,
