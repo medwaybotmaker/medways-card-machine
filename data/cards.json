@@ -1,12 +1,36 @@
 {
   "Starter Egg": {
-    "cost": 0,
     "cards": [
-      "Dog",
-      "Cat",
-      "Bunny",
-      "Bear",
-      "Pig"
+      {
+        "name": "Dog",
+        "rarity": "Common",
+        "attack": 8,
+        "health": 12
+      },
+      {
+        "name": "Cat",
+        "rarity": "Common",
+        "attack": 9,
+        "health": 11
+      },
+      {
+        "name": "Bunny",
+        "rarity": "Common",
+        "attack": 7,
+        "health": 13
+      },
+      {
+        "name": "Pig",
+        "rarity": "Uncommon",
+        "attack": 12,
+        "health": 14
+      },
+      {
+        "name": "Bear",
+        "rarity": "Rare",
+        "attack": 18,
+        "health": 18
+      }
     ]
   }
 }
