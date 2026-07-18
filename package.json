@@ -1,11 +1,13 @@
 {
   "name": "medways-card-machine",
-  "version": "1.0.0",
-  "description": "Medway's Card Machine",
+  "version": "2.0.0",
+  "description": "Medway's Card Machine Discord Bot",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "deploy": "node deploy-commands.js"
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": ">=20.0.0"
   },
   "dependencies": {
     "discord.js": "^14.21.0",
