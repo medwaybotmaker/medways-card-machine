@@ -346,6 +346,13 @@ Use **/open** to hatch your first card!`
 
     const user = users[id];
 
+if (!user) {
+  return interaction.reply({
+    content: "Use **/start** first!",
+    ephemeral: true
+  });
+}
+
     const embed = new EmbedBuilder()
       .setTitle(`${username}'s Profile`)
       .addFields(
@@ -386,6 +393,13 @@ Use **/open** to hatch your first card!`
 
     const user = users[id];
 
+if (!user) {
+  return interaction.reply({
+    content: "Use **/start** first!",
+    ephemeral: true
+  });
+}
+
     const embed = new EmbedBuilder()
       .setTitle("Your Eggs")
       .setDescription(
@@ -406,6 +420,13 @@ Use **/open** to hatch your first card!`
 
     const user = users[id];
 
+if (!user) {
+  return interaction.reply({
+    content: "Use **/start** first!",
+    ephemeral: true
+  });
+}
+
     if (user.cards.length === 0) {
       return interaction.reply({
         content: "You don't have any cards yet. Open a Starter Egg with **/open**!",
@@ -420,8 +441,12 @@ Use **/open** to hatch your first card!`
       .join("\n");
 
     const embed = new EmbedBuilder()
-      .setTitle(`${username}'s Cards`)
-      .setDescription(list);
+  .setColor("Blue")
+  .setTitle(`${username}'s Cards`)
+  .setDescription(list)
+  .setFooter({
+    text: "Medway's Card Machine"
+  });
 
     return interaction.reply({
       embeds: [embed],
@@ -437,6 +462,13 @@ Use **/open** to hatch your first card!`
   if (interaction.commandName === "open") {
 
     const user = users[id];
+
+if (!user) {
+  return interaction.reply({
+    content: "Use **/start** first!",
+    ephemeral: true
+  });
+}
 
     if (user.eggs.starter <= 0) {
       return interaction.reply({
@@ -467,7 +499,8 @@ Use **/open** to hatch your first card!`
     saveUsers(users);
 
     const embed = new EmbedBuilder()
-      .setTitle("Egg Opened!")
+      .setColor("Gold")
+.setTitle("🥚 Starter Egg Opened!")
       .setDescription(
 `You received:
 
