@@ -1,0 +1,8 @@
+# Discord Bot Token
+TOKEN=MTUyNDQ2MzM2Nzg0OTUxMzA4MA.GSF2Hc.IhBCXkRun6obvHrgwvZhIpsfU77EayR8MlJBE0
+
+# Discord Application ID
+CLIENT_ID=1524463367849513080
+
+# Optional
+PORT=3000
